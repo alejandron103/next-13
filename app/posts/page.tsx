@@ -6,6 +6,7 @@ export default async function PostPage () {
     <section className={PostStyles.sectionPost}>
       <h1 className={PostStyles.title}>LISTADO DE POST</h1>
       <section className={PostStyles.containerPost}>
+        {/* @ts-expect-error Server Component */}
         <ListOfPosts />
       </section>
     </section>
