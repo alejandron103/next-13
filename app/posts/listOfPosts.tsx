@@ -14,7 +14,7 @@ const fetchPosts = () => {
 export async function ListOfPosts () {
   const posts = await fetchPosts()
 
-  return posts.slice(0, 5).map(post =>
+  return posts.slice(0, 5).map((post:any) =>
     <article key={post.id} className={PostStyles.post}>
       <Link href={`/posts/${post.id}`}>
         <h2 className={PostStyles.postTitle}>{post.title}</h2>
